@@ -1,0 +1,168 @@
+[
+    {
+        "label": "pyotp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyotp",
+        "description": "pyotp",
+        "detail": "pyotp",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "KiteConnect",
+        "importPath": "kiteconnect",
+        "description": "kiteconnect",
+        "isExtraImport": true,
+        "detail": "kiteconnect",
+        "documentation": {}
+    },
+    {
+        "label": "KiteConnect",
+        "importPath": "kiteconnect",
+        "description": "kiteconnect",
+        "isExtraImport": true,
+        "detail": "kiteconnect",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "selenium.webdriver.chrome.service",
+        "description": "selenium.webdriver.chrome.service",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.service",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "selenium.webdriver.chrome.service",
+        "description": "selenium.webdriver.chrome.service",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.service",
+        "documentation": {}
+    },
+    {
+        "label": "ChromeDriverManager",
+        "importPath": "webdriver_manager.chrome",
+        "description": "webdriver_manager.chrome",
+        "isExtraImport": true,
+        "detail": "webdriver_manager.chrome",
+        "documentation": {}
+    },
+    {
+        "label": "ChromeDriverManager",
+        "importPath": "webdriver_manager.chrome",
+        "description": "webdriver_manager.chrome",
+        "isExtraImport": true,
+        "detail": "webdriver_manager.chrome",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "parse_qs",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "parse_qs",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "cred",
+        "kind": 5,
+        "importPath": "AutoLogin",
+        "description": "AutoLogin",
+        "peekOfCode": "cred = {\n    \"USER_ID\": \"\",\n    \"PASSWORD\": \"\",\n    \"API_KEY\": \"\",\n    \"API_SECRET\": \"\",\n    \"TOTP\": \"\",\n}\ndriver = None  # Initialize driver as None\ntry:\n    login_url = f\"https://kite.trade/connect/login?api_key={cred['API_KEY']}&v=3\"",
+        "detail": "AutoLogin",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "AutoLogin",
+        "description": "AutoLogin",
+        "peekOfCode": "driver = None  # Initialize driver as None\ntry:\n    login_url = f\"https://kite.trade/connect/login?api_key={cred['API_KEY']}&v=3\"\n    totp_secret = cred[\"TOTP\"]\n    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))\n    driver.get(login_url)\n    time.sleep(3)\n    userid = driver.find_element(By.ID, \"userid\")\n    userid.send_keys(cred[\"USER_ID\"])\n    password = driver.find_element(",
+        "detail": "AutoLogin",
+        "documentation": {}
+    },
+    {
+        "label": "cred",
+        "kind": 5,
+        "importPath": "Test",
+        "description": "Test",
+        "peekOfCode": "cred = {\n    \"USER_ID\": 'MW1488',\n    \"PASSWORD\": 'Ssvg9824',\n    'API_KEY': \"xet2kv6sg7slaeie\",\n    'API_SECRET': \"dlguzz8wisbvejab474k19ehcd6izjfx\",\n    \"TOTP\": '2W6L5ANESI5AIUI5AYAH644M5JNKC7NX',\n}\ndriver = None  # Initialize driver as None\ntry:\n    login_url = f\"https://kite.trade/connect/login?api_key={cred['API_KEY']}&v=3\"",
+        "detail": "Test",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "Test",
+        "description": "Test",
+        "peekOfCode": "driver = None  # Initialize driver as None\ntry:\n    login_url = f\"https://kite.trade/connect/login?api_key={cred['API_KEY']}&v=3\"\n    totp_secret = cred['TOTP']\n    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))\n    driver.get(login_url)\n    time.sleep(3)\n    userid = driver.find_element(By.ID, \"userid\")\n    userid.send_keys(cred['USER_ID'])\n    password = driver.find_element(By.ID, \"password\")  # Fixed variable name to avoid confusion",
+        "detail": "Test",
+        "documentation": {}
+    }
+]
